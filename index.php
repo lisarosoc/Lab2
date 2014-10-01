@@ -20,11 +20,11 @@
 
 <script>
 
-var username = document.getElementById('username').value;
-var password = document.getElementById('pw').value;
-
 
 function getValuesFromData(){
+
+var username = document.getElementById('username').value;
+var password = document.getElementById('pw').value;
 
     $.post( "pageb.php", { username: username, password: password })
       .done(function( data ) {
